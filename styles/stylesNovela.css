@@ -1,0 +1,59 @@
+/* stylesNovela.css */
+
+body {
+    font-size: 18px;
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.libro-container {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del contenedor a columna */
+    align-items: center; /* Centra los elementos en el contenedor */
+    margin: 20px;
+}
+
+.imagen-container img {
+    width: 300px; /* Ajusta el ancho deseado para las imágenes */
+    height: 400px; /* Ajusta la altura deseada para las imágenes */
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px; /* Agrega espacio entre la imagen y la información */
+}
+
+.informacion-container {
+    max-width: 50%;
+}
+
+/* Ajusta los estilos según tus necesidades */
+h2, p {
+    margin: 10px 0;
+}
+
+.pdf-buttons-container {
+    margin-top: 20px; /* Ajusta el espacio entre el contenido y los botones */
+}
+
+/* Agrega estilos para los botones de PDF */
+#pdfButtons {
+    display: flex;
+    flex-direction: column; /* Establece la dirección de los elementos a columna */
+    gap: 10px; /* Agrega espacio entre los botones */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+}
+
+#pdfButtons button {
+    width: 100px; /* Establece el ancho deseado para los botones */
+    padding: 5px; /* Añade un poco de espacio interno a los botones */
+    text-align: center; /* Centra el texto dentro del botón */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el exceso de texto si es necesario */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+}

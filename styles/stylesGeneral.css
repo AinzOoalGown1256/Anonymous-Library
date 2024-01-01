@@ -1,6 +1,5 @@
     body {
         font-family: 'Arial', sans-serif;
-        background-image: url('/image/fiis.jpg');
         background-size: cover;
         background-position: center;
         margin: 0;
@@ -73,12 +72,6 @@
         max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
         margin: 0 auto; /* Centra el formulario en el contenedor */
         border-Radius: 10px;
-    }
-    #SeccionInicio {
-        margin: 0 auto; /* Alinear al centro horizontalmente */
-        max-width: 600px; /* Establecer un ancho máximo si es necesario */
-        border-radius: 50%; /* Hace que los bordes sean circulares */
-        overflow: hidden; /* Asegura que el contenido no se desborde del borde circular */
     }
       
     section {
@@ -194,23 +187,4 @@
     .genres-container{
         border: 2px solid black;
         padding: 8px;
-    }
-    #SeccionInicio {
-        width: 80%;
-        margin: 0 auto; /* Alinear al centro horizontalmente */
-        max-width: 800px; /* Establecer un ancho máximo si es necesario */
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border: 2px solid #333;
-        background-color: rgba(0,0,0,0.8);
-        padding: 20px;
-        text-align: center;
-        color: white;   
-    }
-
-    #SeccionInicio img {
-        max-width: 200px; /* Ajusta el ancho máximo de la imagen según sea necesario */
-        border-radius: 50%; /* Borde completamente ovalado */
-        width: 100%; /* Para asegurar que la imagen se ajuste al contenedor */
     }

@@ -12,32 +12,47 @@
         <div class="header-buttons">
             <button class="genre-button" id="btnInicio">Inicio</button>
             <button class="genre-button" id="btnNovela">Novela Ligera</button>
+            <button class="genre-button" id="btnManga">Manga</button>
+            <button class="genre-button" id="btnDoujinshi">Doujinshi</button>
         </div>
     </header>
     <main>
         <section id="SeccionInicio" class="section-container">
-            <div>
-                <h2>Inicio</h2>
-                <p>Bienvenido estudiantes de FIIS - UNI.</p>
-                <p> Explora nuestra colección de libros y disfruta de la lectura.</p>
-            </div>
-            <img src="image/Emblema.jpg" >
             <div class="book-shelf"></div>
         </section>
 
         <section id="SeccionNovela" class="section-container" style="display: none;">
             <section class="genres">
-                <h2>Género</h2>
                 <form id="NovelaGenreForm"></form>
             </section>
             <div class="book-shelf"></div>
         </section>
-        <script type="text/javascript" src="Musica/ListMusic.js"></script>
+        
+        <section id="SeccionManga" class="section-container" style="display: none;">
+            <section class="genres">
+                <form id="MangaGenreForm"></form>
+            </section>
+            <div class="book-shelf"></div>
+        </section>
+
+        <section id="SeccionDoujinshi" class="section-container" style="display: none;">
+            <section class="genres">
+                <form id="DoujinshiGenreForm"></form>
+            </section>
+            <div class="book-shelf"></div>
+        </section>
     </main>
     <footer>
         <p>&nbsp;Derechos de autor © 2023 Anonymous Library. Todos los derechos reservados.</p>
     </footer>
+    <script type="module" src="./Data/dataInicio.js"></script>
     <script type="module" src="./Data/dataNovela.js"></script>
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="./Data/dataManga.js"></script>
+    <script type="module" src="./Data/dataDoujinshi.js"></script>
+    <script type="module" src="./js/mainGeneral.js"></script>
+    <script type="module" src="./js/mainNovela.js"></script>
+    <script type="module" src="./js/ConstGlobales.js"></script>
+    
+    
 </body>
 </html>

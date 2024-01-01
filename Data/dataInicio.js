@@ -2,7 +2,7 @@ export const librosInicio = [
     {
         "id": "Inicio1",
         "generos": [""],
-        "imagen": "image/Manga/Portada.jpg",
+        "imagen": "image/Inicio/Portada.jpg",
         "nombre": "",
         "estado": "",
         "tomos": "",

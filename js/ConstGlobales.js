@@ -1,6 +1,6 @@
 export const generosNovela = ['Acción', 'Aventura', 'Fantasía', "Slice of Life", 'Drama', 'Comedia', 'Romance', 'Ficción', 'Misterio', 'Horror', 'Thriller', 'Magia', 'Deportes', 'Mecha','Harem Inverso'];
 export const generosManga = ['Blanco','Negro']
-export const generosDoujinshi = ['Anal','Vaginal','Incesto'];
+export const generosDoujinshi = [':V'];
 
 export const btnInicio = document.getElementById("btnInicio");
 export const btnNovela = document.getElementById("btnNovela");

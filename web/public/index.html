@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Library</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+        header {
+            background-color: #f60;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            font-size: 1.5em;
+        }
+
+        footer {
+            background-color: #f60;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            margin-top: auto;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #1c1c1c;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            color: #fff;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        #searchInput {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            max-width: 500px;
+        }
+
+        #searchInput:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .genre-dropdown {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #f8f8f8;
+            color: #333;
+            max-width: 200px;
+        }
+
+        .genre-dropdown:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .genre-row {
+            margin-bottom: 30px;
+        }
+
+        .genre-row h2 {
+            margin-bottom: 10px;
+            color: orange;
+        }
+
+        .row-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .row {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding: 10px 0;
+            gap: 12px;
+        }
+
+        .download-link {
+            background-color: #111;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 160px;
+            flex-shrink: 0;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .download-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px orange;
+        }
+
+        .download-link img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .info {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .info h3 {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .arrow {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: none;
+            font-size: 24px;
+            width: 40px;
+            height: 240px;
+            cursor: pointer;
+            z-index: 1;
+            transition: background 0.3s;
+        }
+
+        .arrow:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .left-arrow {
+            position: absolute;
+            left: 0;
+        }
+
+        .right-arrow {
+            position: absolute;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="SeccionManga" class="section-container">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar...">
+                <div id="NovelaGenreForm"></div>
+            </div>
+            <div class="book-shelf-Novela"></div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script type="module" src="./Data.js"></script>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
